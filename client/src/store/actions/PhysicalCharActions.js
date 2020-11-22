@@ -41,7 +41,7 @@ export function FETCH_PHYSICAL_CHARS(pageNumber) {
     else {
     dispatch(SET_LOADING(true))
     axios({
-      url: `http://swapi.dev/api/people/?page=${pageNumber}`,
+      url: `https://swapi.dev/api/people/?page=${pageNumber}`,
       method: 'GET',
     })
       .then(({ data }) => { 
